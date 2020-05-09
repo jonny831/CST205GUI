@@ -1,10 +1,4 @@
-# -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'MainWindow.ui'
-#
-# Created by: PyQt5 UI code generator 5.13.0
-#
-# WARNING! All changes made in this file will be lost!
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
@@ -97,13 +91,12 @@ class Ui_MainWindow(object):
         font.setKerning(True)
         self.checkbox_three.setFont(font)
         self.checkbox_three.setObjectName("checkbox_three")
-        self.CancelOk_button = QtWidgets.QDialogButtonBox(self.centralwidget)
-        self.CancelOk_button.setGeometry(QtCore.QRect(330, 450, 164, 32))
-        self.CancelOk_button.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
-        self.CancelOk_button.setObjectName("CancelOk_button")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(290, 80, 211, 20))
         self.label.setObjectName("label")
+        self.OkPush_button = QtWidgets.QPushButton(self.centralwidget)
+        self.OkPush_button.setGeometry(QtCore.QRect(350, 420, 113, 32))
+        self.OkPush_button.setObjectName("OkPush_button")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 22))
@@ -187,6 +180,7 @@ class Ui_MainWindow(object):
         self.checkbox_two.setText(_translate("MainWindow", "Step 2"))
         self.checkbox_three.setText(_translate("MainWindow", "Step 3"))
         self.label.setText(_translate("MainWindow", "Create your essay in 3 essay steps"))
+        self.OkPush_button.setText(_translate("MainWindow", "OK"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuEdit.setTitle(_translate("MainWindow", "Edit"))
         self.menuWindow.setTitle(_translate("MainWindow", "Window"))
